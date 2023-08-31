@@ -1,0 +1,22 @@
+{
+  "name": "super-tic-tac-toe",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "serve": "live-server dist",
+    "build-watch": "vite build --watch",
+    "dev": "pnpx concurrently -n SERVE,BUILD -c \"auto\" \"pnpm run serve\" \"pnpm run build-watch\""
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "concurrently": "^8.2.1",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3",
+    "tsx-dom": "^2.0.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}
