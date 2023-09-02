@@ -1,4 +1,4 @@
-import { Edge } from "../types";
+import { EdgeType } from "../types";
 
 function assertNumValid(
   num: number
@@ -7,7 +7,7 @@ function assertNumValid(
     throw new Error("The tile index must be a number between 0 and 8");
 }
 
-export const numToEdge = (num: number): Edge => {
+export const numToEdgeType = (num: number): EdgeType => {
   assertNumValid(num);
 
   switch (num) {
